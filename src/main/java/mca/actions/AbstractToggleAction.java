@@ -36,7 +36,7 @@ public abstract class AbstractToggleAction extends AbstractAction
 	}
 	
 	/** @returns True if this AI is currently running. */
-	public final boolean getIsActive()
+	public final float getIsActive()
 	{
 		return actor.getDataManager().get(IS_AI_ACTIVE) && actor.getDataManager().get(ACTIVE_AI_NAME).equals(this.getName());
 	}
